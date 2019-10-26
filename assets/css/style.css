@@ -85,9 +85,7 @@ iframe {
     margin: 8px -16px;
 }
 .row, .row > .column1 {
-    padding: 15px;
-    margin: 0 auto;
-}
+    padding: 15px;}
 .column1 {
     float: left;
     width: 30%;
