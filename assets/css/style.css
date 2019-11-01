@@ -1,8 +1,11 @@
 body {
-    background-image: url("../images/bkggold.png");
-    background-size:auto;
+
     background-color:#fff;
     margin:0 0 0 0;
+}
+.bg-dots {
+    background-image: url("../images/bkggold.png");
+    background-size:auto;
 }
 a {
     text-decoration: none;
@@ -10,7 +13,6 @@ a {
 }
 h1 {
     color:rgb(78, 78, 78);
-    border-bottom:2px solid rgba(128, 128, 128, 0.205);
     text-align:center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -23,11 +25,7 @@ p {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-#me {
-    width:30%;
-    border-radius: 50%;
-    height:auto;
-}
+
 .bar {
     pointer-events:none;
 }
@@ -81,7 +79,7 @@ iframe {
     border-radius:5px;
     box-shadow: 0px 1px 2px 2px #00000005;
 }
-.row {
+/*.row {
     margin: 8px -16px;
 }
 .row, .row > .column1 {
@@ -99,7 +97,7 @@ iframe {
     content: "";
     display: table;
     clear: both;
-}
+}*/
 #map {
     float:right;
     padding-right:5%;
@@ -125,7 +123,7 @@ iframe {
     border-radius:7px;
     bottom:0;
 }
-.contentcontact { 
+/*.contentcontact { 
     background-color:#fff;
     padding: 0px 0 0 0;
     box-shadow:0px 1px 1px 1px #00000025;
@@ -144,24 +142,15 @@ iframe {
     padding:10px 0 10px 0;
     zoom:1.25;
 }
-#container {
-    padding: 25px 0 0 40px;
-}
-@media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-}
+.container {
+    border-radius:7px;
+    box-shadow: 0px 3px 5px 0px #00000014;
+}*/
 .navhead {
     height:75px;
     width:100%;
     background-color:#fff;
-    box-shadow:0px 1px 1px 1px #00000025;
+    box-shadow:0px 3px 5px 0px #00000014;
 }
 #logo {
     width: 240px;
@@ -282,8 +271,19 @@ iframe {
   text-decoration: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
     .modal-content {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .col-md-4 {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .col-md-8 {
       width: 100%;
     }
 }
