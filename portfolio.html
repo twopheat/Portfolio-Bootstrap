@@ -2,113 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>Brad_J | Portfolio</title>
+    <title>Brad.j | Portfolio</title>
   </head>
-  <header class="navhead">
-      <div id="logo">
-          <img id="logopic" src="assets/images/logo.png" alt="Logo"/>
+  
+  <header class="row bg-white shadow-sm">
+      <div class="col-sm-4">
+          <div id="logo">
+              <img id="logopic" src="assets/images/logo.png" alt="Logo"/>
+          </div>   
+        </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5">
+          <div class="topnav">
+              <a href="contact.html">Contact</a><a class="bar">|</a>
+              <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
+              <a href="index.html">About</a>
+          </div>
       </div>
-    <div class="topnav">
-      <a href="contact.html">Contact</a><a class="bar">|</a>
-      <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
-      <a href="index.html">About</a>
-        
-    </div>
-  </header>
-  <body>
-   <div class="content">
-      <h1 class="ptitle">Portfolio</h1>
-      <!-- Portfolio Gallery Grid -->
-      <div class="row">
-        <div class="column1">
-          <div class="picbox">
-            <img class="myImg" src="assets/images/omstc.JPG" alt="OMSTC" style="width:100%">
-            <h3>OneManandaSolution</h3>
-            <p>This was my first shot at a website for profit. I had just opened my tech consulting business in Atlanta, and I could not afford a website back then. I ran the business in Atlanta for 7 years, gained 540+ happy customers, and cut my teeth on web development and design back in the early 2000's.</p>
-            </div>
-        </div>
-        <div class="column1">
-          <div class="picbox">
-              <img class="myImg" src="assets/images/jjm.JPG" alt="JudgeJohnnyMason" style="width:100%">
-      <h3>JudgeJohnnyMason</h3>
-            <p>I built this site for a Judge running for re-election in Atlanta. It's pure html and very very little css. This was the early days for me. He was re-elected, by the way.</p>
-            </div>
-        </div>
-        <div class="column1">
-            <div class="picbox">
-            <img class="myImg" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
-              <h3>TheBandGuard</h3>
-              <p>This was a wedding band cover that I have patent-pending status on. I sold only two in a year's time. One day I intend to rehash these and push them better.</p>
-            </div>
-          </div>
-          <div class="column1">
-              <div class="picbox">
-              <img class="myImg" src="assets/images/icarenote.png" alt="TheBandGuard" style="width:100%">
-                <h3>iCareNote</h3>
-                <p>iCarenote was my first Start-Up experience. Like most Start-Ups, it went belly up around a year or so in. Good experience, good lessons, good times.</p>
-              </div>
-            </div>                  
-        <div class="column1">
-          <div class="picbox"><a target="_blank" href="https://orionservers.net">
-          <img class="pic" src="assets/images/ogs.JPG" alt="OrionServers" style="width:100%"></a>
-            <h3>OrionServers</h3>
-            <p>This is a new venture I glad to be a part of. We offer game servers, game slots, and vps for business at some of the lowest prices around. Our hosts are DDOS and power reduntant 24/7. </div>
-        </div>
-        <div class="column1">
-          <div class="picbox"><a target="_blank" href="https://twopheat.github.io/prework-about-me/">
-          <img class="pic" src="assets/images/prework.JPG" alt="PreWork" style="width:100%"></a>
-            <h3>Bootcamp Prework</h3>
-            <p>This is my About page for our PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
-          </div>
-        </div>        
-        <div class="column2">
-            <div class="picbox"><a target="_blank" href="http://precogwest.com">
-            <img class="pic" src="assets/images/precog.JPG" alt="Mountains" style="width:100%"></a>  
-            <h3>PrecogWest</h3>
-            <p>This is my current side business. We build websites and mobile applications as well as support IT infrastructure for small to medium businesses. From servers to VOIP phones and everything in between.</p>
-
-            </div>
-          </div>
-      <!-- END GRID -->
-      <div id="myModal" class="modal">
-          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-          <img class="modal-content" id="img01">
-      </div>
-     </div>
     
-   </div>
-   <script>
-   
-   var modal = document.getElementById("myModal");
-    var i;
+  </header>
+  <body class="bg-dots">
 
-    var img = document.getElementsByClassName("myImg");
-    var modalImg = document.getElementById("img01");
+    <div class="container bg-white rounded-lg shadow-sm mt-4">
+        <h1>About Me</h1>
 
-     for(i=0;i< img.length;i++)
-           {    
-        img[i].onclick = function(){
+        <div class="row">
+                <div class="col-sm-4">
+                    <img class="myImg" src="assets/images/omstc.JPG" alt="OMSTC" style="width:100%">
+                    <h3>OneManandaSolution</h3>
+                    <p class="text-center">This was my first shot at a website for profit. I had just opened my tech consulting business in Atlanta, and I could not afford a website back then. I ran the business in Atlanta for 7 years, gained 540+ happy customers, and cut my teeth on web development and design back in the early 2000's.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="myImg" src="assets/images/jjm.JPG" alt="JudgeJohnnyMason" style="width:100%">
+                    <h3>JudgeJohnnyMason</h3>
+                    <p class="text-center">I built this site for a Judge running for re-election in Atlanta. It's pure html and very very little css. This was the early days for me. He was re-elected, by the way.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="myImg" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
+                    <h3>TheBandGuard</h3>
+                    <p class="text-center">This was a wedding band cover that I have patent-pending status on. I sold only two in a year's time. One day I intend to rehash these and push them better.</p>
+                </div>
+        </div>
 
-    modal.style.display = "block";
-       modalImg.src = this.src;
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="myImg" src="assets/images/ogs.JPG" alt="OrionServers" style="width:100%" target="_blank" href="https://orionservers.net"></a>
+                <h3>OrionServers</h3>
+                <p class="text-center">This is a new venture I am glad to be a part of. We offer game servers, game slots, and vps for business at some of the lowest prices around. Our hosts are DDOS and power reduntant 24/7.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="pic" src="assets/images/prework.JPG" alt="PreWork" style="width:100%">
+                <h3>Bootcamp Prework</h3>
+                <p class="text-center">This is my About page for our PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="myImg" src="assets/images/icarenote.png" alt="iCareNote" style="width:100%">
+                <h3>iCareNote</h3>
+                <p class="text-center">iCarenote was my first Start-Up experience. Like most Start-Ups, it went belly up around a year or so in. Good experience, good lessons, good times.</p>
+            </div>
+        </div>
 
- }
-    }
+        <div class="row">
+            <div class="col">
+              <div class="col-sm-12 col-sm-offset-4">
+                <img class="myImg" src="assets/images/precog.JPG" alt="Mountains" style="width:100%">
+                <h3>PrecogWest</h3>
+                <p class="text-center">This is my current side business. We build websites and mobile applications as well as support IT infrastructure for small to medium businesses. From servers to VOIP phones and everything in between.</p>
+              </div>
+            </div>
+        </div>
+          
+    </div>
 
-    var span = document.getElementsByClassName("close")[0];
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }   
-
-   </script>
   </body>
-  <footer>
-    <p id="copyright">Copyright © TwoPheat</p>
 
-  </footer>
+ <div class="card-footer footerfolio">
+    <p id="copyright">Copyright © TwoPheat</p>
+ </div>
+</div>
 </html>
